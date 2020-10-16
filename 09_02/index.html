@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events Aplenty</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      .container {
+        width: 40rem;
+        padding: 2rem 2rem 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 2rem;
+        background-color: hsl(0, 0%, 85%);
+      }
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      .cta-button {
+        padding: 1rem 2rem;
+        border: 3px solid black;
+        border-radius: 0.5rem;
+        font-size: 2rem;
+        flex: 0 1 auto;
+        background-color: white;
+        cursor: pointer;
+      }
+
+      .cta-button.active {
+        color: white;
+        background: black;
+      }
+
+      .mouse-data {
+        margin-top: 2rem;
+        font-size: 2rem;
+      }
+
+      .blue {
+        background-color: hsl(204, 100%, 62%);
+      }
+    </style>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <article class="container">
+        <h1>Events: A Demonstration</h1>
+        <button class="cta-button">Click me!</button>
+        <div class="mouse-data">
+          <div class="posX">X: <span></span></div>
+          <div class="posY">Y: <span></span></div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

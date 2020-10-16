@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+}
+
+figure {
+  margin: 0;
+}
+
+.siteheader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.site-title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 5rem;
+  font-weight: 200;
+}
+
+.siteheader:after {
+  display: block;
+  margin: 4rem 0;
+  content: "⚍⚌⚍";
+}
+
+.maincontent {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 60rem;
+}
+
+.page-header {
+  margin-bottom: 3rem;
+}
+
+.page-header__heading {
+  margin-top: -1rem;
+  text-align: center;
+}
+
+.page-header:after {
+  margin: 4rem auto;
+  display: block;
+  content: "";
+  border-bottom: 3px solid black;
+  width: 4rem;
+}
+
+.backpack {
+  margin-bottom: 4rem;
+  /* padding-bottom: rem; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 0 3rem;
+}
+
+.backpack:after {
+  margin: 0 auto;
+  padding-top: 4rem;
+  display: block;
+  grid-column: span 2;
+  content: "";
+  border-bottom: 3px solid black;
+  width: 4rem;
+}
+
+.backpack__image {
+  grid-row: span 2;
+}
+
+.backpack__name {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  padding-bottom: 2rem;
+  font-size: 5rem;
+  line-height: 1;
+  text-transform: uppercase;
+  border-bottom: 3px solid black;
+}
+
+.backpack__features {
+  margin: 0;
+  padding: 2rem 0 0 0;
+  list-style-type: none;
+}
+
+.backpack__features li {
+  padding: 0.2rem 0;
+}
+
+/* Subgrid. See https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Subgrid */
+@supports (grid-template-columns: subgrid) {
+  .backpack__features {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0 1rem;
+  }
+
+  .backpack__features li {
+    display: grid;
+    grid-column: span 2;
+    grid-template-columns: subgrid;
+  }
+}
+
+.lid-toggle {
+  display: inline-block;
+  border: 3px solid black;
+  border-radius: 0.3rem;
+  padding: 2rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  background-color: white;
+}
+.lid-toggle:hover,
+.lid-toggle:focus {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.lid-toggle:active {
+  background-color: black;
+  color: white;
+}
+
+.sitefooter {
+  margin-top: 8rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  background: black;
+  color: white;
+}

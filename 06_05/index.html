@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Console demo</title>
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 4.6rem;
+      }
+
+      code {
+        font-size: 120%;
+      }
+
+      .boxes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        max-width: 60rem;
+      }
+
+      .title {
+        grid-column: span 2;
+        text-align: center;
+      }
+      .boxes div {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 4rem;
+        font-size: 3rem;
+        color: white;
+        background-color: green;
+      }
+    </style>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="boxes">
+      <h1 class="title">When <code>var</code> and scope collide!</h1>
+      <div class="left">color: <code class="color-value">green</code></div>
+      <div class="right">color: <code class="color-value">green</code></div>
+    </main>
+  </body>
+</html>
