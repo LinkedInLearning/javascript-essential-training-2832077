@@ -5,7 +5,13 @@ Licensed under the LinkedIn Learning Exercise File License (the "License").
 See LICENSE in the project root for license information.
 
 ATTRIBUTIONS:
-[PLEASE PROVIDE ATTRIBUTIONS OR DELETE THIS AND THE ABOVE LINE “ATTRIBUTIONS”]
+Fonts:
+Oswald: https://fonts.google.com/specimen/Oswald
+Work Sans: https://fonts.google.com/specimen/Work+Sans
+
+Dependencies:
+eslint https://www.npmjs.com/package/eslint
+Prettier https://www.npmjs.com/package/prettier
 
 Please note, this project may automatically load third party code from external 
 repositories (for example, NPM modules, Composer packages, or other dependencies). 
