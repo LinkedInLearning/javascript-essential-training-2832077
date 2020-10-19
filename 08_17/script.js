@@ -7,13 +7,18 @@
  */
 import backpackObjectArray from "./components/data.js";
 
-const main = document.querySelector(".maincontent");
-
+// Map throught the array and make a new array
 const content = backpackObjectArray.map((backpack) => {
+  // "backpack" now holds a single backpack object
+
+  // Create new article
   let backpackArticle = document.createElement("article");
   backpackArticle.classList.add("backpack");
+
+  // Set article ID to the backpack.id property
   backpackArticle.setAttribute("id", backpack.id);
 
+  // Set the innerHTML of backpackArticle using the backpack object.
   backpackArticle.innerHTML = `
     <figure class="backpack__image">
       <img src=${backpack.image} alt="" loading="lazy" />
@@ -41,9 +46,15 @@ const content = backpackObjectArray.map((backpack) => {
       }</span></li>
     </ul>
   `;
+
+  // Return the backpackArticle to the content array.
   return backpackArticle;
 });
 
+// Get the main
+const main = document.querySelector(".maincontent");
+
+// Loop through the content array to append each backpack article.
 content.forEach((backpack) => {
   main.append(backpack);
 });

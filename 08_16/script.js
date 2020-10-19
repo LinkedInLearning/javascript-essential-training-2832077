@@ -21,7 +21,6 @@ const everydayPack = new Backpack(
 );
 
 const content = `
-  
     <figure class="backpack__image">
       <img src=${everydayPack.image} alt="" />
     </figure>

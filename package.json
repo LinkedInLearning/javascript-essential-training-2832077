@@ -1,12 +1,12 @@
 {
   "name": "javascript-essential-training-exercise-files",
   "version": "1.0.0",
-  "description": "Repository for exercise files used in the LinkedIn Learning course \"JavaScript Essential Training\" instructed by Morten Rand-Hendriksen and published 2020.",
+  "description": "Repository for exercise files used in the LinkedIn Learning course `JavaScript Essential Training` instructed by Morten Rand-Hendriksen and published 2020.",
   "main": "index.html",
   "author": "Morten Rand-Hendriksen",
   "license": "SEE LICENSE IN LICENSE",
   "devDependencies": {
-    "eslint": "^7.9.0",
+    "eslint": "^7.11.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-node": "^11.1.0",

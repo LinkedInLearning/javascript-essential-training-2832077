@@ -1,6 +1,12 @@
 /**
  * Solution: Create an event listener
- * - Add event listeners to each of the strap length forms.
+ * - Find the two elements with the .backpack__strap class.
+ * - Create a function to output the strap length form.
+ * - Iterate through each item with the .backpack__strap class.
+ * - Capture the value of the data-side attribute to indicate the strap side.
+ * - Create a form element.
+ * - Populate the form with an input and a submit button.
+ * - Add event listener to each of the strap length forms.
  * - Update strap length value with value submitted from form.
  */
 import backpackObjectArray from "./components/data.js";
@@ -9,43 +15,43 @@ import backpackObjectArray from "./components/data.js";
  * Add event listener to the lid-toggle button.
  */
 const lidToggle = function (event, button, newArg) {
-  console.log(event)
-  console.log(newArg)
-   
+  console.log(event);
+  console.log(newArg);
+
   // Find the current backpack object in backpackObjectArray
-  let backpackObject = backpackObjectArray.find( ({ id }) => id === button.parentElement.id );
-  
+  let backpackObject = backpackObjectArray.find(
+    ({ id }) => id === button.parentElement.id
+  );
+
   // Toggle lidOpen status
-  backpackObject.lidOpen == true 
-    ? backpackObject.lidOpen = false 
-    : backpackObject.lidOpen = true;
+  backpackObject.lidOpen == true
+    ? (backpackObject.lidOpen = false)
+    : (backpackObject.lidOpen = true);
 
   // Toggle button text
-  button.innerText == "Open lid" 
-    ? button.innerText = "Close lid" 
-    : button.innerText = "Open lid";
+  button.innerText == "Open lid"
+    ? (button.innerText = "Close lid")
+    : (button.innerText = "Open lid");
 
   // Set visible property status text
   let status = button.parentElement.querySelector(".backpack__lid span");
   status.innerText == "closed"
     ? (status.innerText = "open")
     : (status.innerText = "closed");
-}
+};
 
 /**
  * Strap length functionality
  */
 const newStrapLength = (strapArray) => {
-
   // Loop through each element on the list
-  strapArray.forEach( listElement => {
-
+  strapArray.forEach((listElement) => {
     // Get what side we are working with
-    let side = listElement.getAttribute("data-side")
+    let side = listElement.getAttribute("data-side");
 
     // Create a new form element
-    const lengthForm = document.createElement("form")
-    lengthForm.classList.add(`${side}length`)
+    const lengthForm = document.createElement("form");
+    lengthForm.classList.add(`${side}length`);
 
     // Populate form with an input and a button
     lengthForm.innerHTML = `
@@ -55,27 +61,25 @@ const newStrapLength = (strapArray) => {
 
     // Add event listener to the form submit action
     lengthForm.addEventListener("submit", (e) => {
-
       // Stop form from reloading the page
-      e.preventDefault()
+      e.preventDefault();
 
       // Get the value from the form input
-      let newValue = lengthForm.querySelector("input").value
+      let newValue = lengthForm.querySelector("input").value;
 
       // Set the value of the field
-      listElement.querySelector("span").innerHTML = `${newValue} inches`
+      listElement.querySelector("span").innerHTML = `${newValue} inches`;
 
       // Clear the form input
-      lengthForm.querySelector("input").value = ""
-    })
+      lengthForm.querySelector("input").value = "";
+    });
 
     // Add form to the end of the list element
-    listElement.append(lengthForm)
-  })
-}
+    listElement.append(lengthForm);
+  });
+};
 
 const backpackList = backpackObjectArray.map((backpack) => {
-
   let backpackArticle = document.createElement("article");
   backpackArticle.classList.add("backpack");
   backpackArticle.setAttribute("id", backpack.id);
@@ -108,17 +112,20 @@ const backpackList = backpackObjectArray.map((backpack) => {
     </ul>
     <button class="lid-toggle">Open lid</button>
   `;
-  
-  let strapLengths = backpackArticle.querySelectorAll(".backpack__strap")
-  newStrapLength(strapLengths)
+
+  // Find the two list items with the .backpack__strap class
+  let strapLengths = backpackArticle.querySelectorAll(".backpack__strap");
+
+  // Call the newStrapLength() function and pass on the strapLengths node list.
+  newStrapLength(strapLengths);
 
   let button = backpackArticle.querySelector(".lid-toggle");
-  let newArg = "The argument I want to pass to the callback function!"
+  let newArg = "The argument I want to pass to the callback function!";
 
   // Add event listener
   button.addEventListener("click", (event) => {
-    lidToggle(event, button, newArg)
-  })
+    lidToggle(event, button, newArg);
+  });
 
   return backpackArticle;
 });
@@ -129,5 +136,3 @@ const main = document.querySelector(".maincontent");
 backpackList.forEach((backpack) => {
   main.append(backpack);
 });
-
-

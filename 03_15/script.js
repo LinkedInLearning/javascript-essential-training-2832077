@@ -33,7 +33,7 @@ const surveillanceCapitalism = new Book(
   691,
   "Finished"
 );
-console.log(surveillanceCapitalism)
+console.log(surveillanceCapitalism);
 
 const consciousCreative = new Book(
   "The Conscious Creative",
@@ -44,7 +44,7 @@ const consciousCreative = new Book(
   216,
   "Finished"
 );
-console.log(consciousCreative)
+console.log(consciousCreative);
 
 const techVirtues = new Book(
   "Technology and the Virtues",

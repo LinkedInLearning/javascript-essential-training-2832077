@@ -1,6 +1,6 @@
 /**
- * Challenge: Create an event listener
- * - Add event listener to each of the strap length forms.
+ * Solution: Create an event listener
+ * - Add event listeners to each of the strap length forms.
  * - Update strap length value with value submitted from form.
  */
 import backpackObjectArray from "./components/data.js";
@@ -38,10 +38,12 @@ const lidToggle = function (event, button, newArg) {
  * Strap length functionality
  */
 const newStrapLength = (strapArray) => {
+  console.log(strapArray);
   // Loop through each element on the list
   strapArray.forEach((listElement) => {
     // Get what side we are working with
     let side = listElement.getAttribute("data-side");
+    console.log(side);
 
     // Create a new form element
     const lengthForm = document.createElement("form");
@@ -52,6 +54,21 @@ const newStrapLength = (strapArray) => {
       <input type="number" name="${side}Length" placeholder="New ${side} length">
       <button>Update</button>
     `;
+
+    // Add event listener to the form submit action
+    lengthForm.addEventListener("submit", (e) => {
+      // Stop form from reloading the page
+      e.preventDefault();
+
+      // Get the value from the form input
+      let newValue = lengthForm.querySelector("input").value;
+
+      // Set the value of the field
+      listElement.querySelector("span").innerHTML = `${newValue} inches`;
+
+      // Clear the form input
+      lengthForm.querySelector("input").value = "";
+    });
 
     // Add form to the end of the list element
     listElement.append(lengthForm);
