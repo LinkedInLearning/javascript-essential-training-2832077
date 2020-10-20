@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.grid {
+  margin: 0;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(7, 6rem);
+  gap: 1rem;
+  list-style-type: none;
+  border-radius: 0.5rem;
+}
+
+.cell {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  background-color: hsl(0, 0%, 90%);
+}
