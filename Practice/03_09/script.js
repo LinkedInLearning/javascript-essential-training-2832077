@@ -23,4 +23,18 @@ const backpack = {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   },
+  newName: function (a) {
+    this.name = a;
+  },
+  checkVolume: function (a, b) {
+    if (a < this.volume) {
+      console.log("volume too low, new volume set to", b);
+      this.volume = b;
+    } else {
+      console.log("the volume is large enough :)");
+    }
+  },
+  changeColor: function (newcolor) {
+    this.color = newcolor;
+  },
 };
