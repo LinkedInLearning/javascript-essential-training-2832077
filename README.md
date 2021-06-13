@@ -21,7 +21,7 @@ Some movies will have a beginning and an end state. In the exercise files, the e
    - [Node.js](https://nodejs.org/en/)
    - [Prettier code formatter extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
    - [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-2. From the root folder, open the terminal and enter the command `nmp install` to install dependencies.
+2. From the root folder, open the terminal and enter the command `npm install` to install dependencies.
 
 ### Instructor
 
