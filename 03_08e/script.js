@@ -26,6 +26,9 @@ console.log("The pocketNum value:", backpack.pocketNum);
 
 console.log("Left before:", backpack.strapLength.left);
 
+var query = "pocketNum";
+console.log("The pocketNum value is:", backpack[query]);
+
 backpack.newStrapLength(10, 15);
 
 console.log("Left after:", backpack.strapLength.left);
