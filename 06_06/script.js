@@ -6,6 +6,7 @@
 // String:
 let stringDemo = "A string of text.";
 console.log("String:", stringDemo);
+console.log("Typeof:", typeof stringDemo);
 
 // Numbes:
 let integerDemo = 4;
