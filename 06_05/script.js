@@ -11,11 +11,13 @@ document.querySelector(".left .color-value").innerHTML = color;
 color = "skyblue";
 
 function headingColor() {
-  let color = "blue";
-  document.querySelector(".title").style.color = color;
+  let titleColor = "blue";
+  document.querySelector(".title").style.color = titleColor;
 }
 
 headingColor();
+
+//onsole.log(titleColor);
 
 document.querySelector(".right").style.backgroundColor = color;
 document.querySelector(".right .color-value").innerHTML = color;
