@@ -4,6 +4,7 @@
  */
 
 let color = "purple";
+// const color = "purple";
 
 document.querySelector(".left").style.backgroundColor = color;
 document.querySelector(".left .color-value").innerHTML = color;
