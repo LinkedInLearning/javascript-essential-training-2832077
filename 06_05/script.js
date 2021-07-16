@@ -17,7 +17,7 @@ function headingColor() {
 
 headingColor();
 
-//onsole.log(titleColor);
+//Console.log(titleColor);
 
 document.querySelector(".right").style.backgroundColor = color;
 document.querySelector(".right .color-value").innerHTML = color;
