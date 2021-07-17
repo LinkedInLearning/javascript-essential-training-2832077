@@ -25,3 +25,6 @@ const addPack = function (currentPack) {
 
 const main = document.querySelector("main");
 main.append(addPack(greenPack));
+
+const newArticle = addPack(greenPack);
+console.log(newArticle);
