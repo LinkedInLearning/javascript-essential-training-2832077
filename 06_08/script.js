@@ -6,6 +6,8 @@
 let a = 5;
 let b = 4;
 let c = 3.2;
+let e = 10;
+let d = '1';
 
 console.log(`let a: ${a} (${typeof a})`);
 console.log(`let b: ${b} (${typeof b})`);
@@ -18,3 +20,8 @@ console.log("a : ", ++a);
 console.log(a);
 console.log("b : ", b++);
 console.log(b);
+
+console.log("Result false", d+e);
+console.log("Result false", d-e);
+
+
