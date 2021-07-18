@@ -8,3 +8,6 @@ let item = "flashlight";
 const collection = ["Piggy", item, 5, true];
 
 console.log(collection);
+
+collection[9] = "Nguyen";
+console.log(collection[5]);
