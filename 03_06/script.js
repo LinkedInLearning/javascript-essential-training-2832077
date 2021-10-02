@@ -21,4 +21,15 @@ const backpack = {
   },
 };
 
-console.log("The backpack object:", backpack);
+
+console.log("The backpack object initially:", backpack);
+
+const secondBackpack = backpack;
+
+console.log("the secondBackpack object initially", secondBackpack);
+
+secondBackpack.newStrapLength(30,30);
+
+console.log("the backpack object following referance change", backpack);
+
+console.log("the secondBackpack object following function call", secondBackpack);
