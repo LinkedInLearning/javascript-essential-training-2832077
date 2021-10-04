@@ -49,3 +49,16 @@ const content = `
 `;
 
 main.innerHTML = content;
+
+
+const featuresList = document.querySelector(".backpack__features");
+
+console.log("Here's a list of features", featuresList);
+
+const allFeatures = document.querySelectorAll(".backpack__features li");
+
+console.log("All Features", allFeatures);
+
+allFeatures.forEach((feat)=>{
+  console.log(feat);
+})
