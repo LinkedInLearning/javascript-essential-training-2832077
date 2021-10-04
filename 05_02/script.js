@@ -60,5 +60,16 @@ const allFeatures = document.querySelectorAll(".backpack__features li");
 console.log("All Features", allFeatures);
 
 allFeatures.forEach((feat)=>{
+  feat.classList.add("testClass");
   console.log(feat);
+
+})
+
+allFeatures.forEach((feet)=>{
+  feet.classList.remove("testClass");
+  console.log(feet);
+})
+
+allFeatures.forEach((feit)=>{
+  feit.style.backgroundColor="#eee";
 })
