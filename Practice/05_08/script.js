@@ -29,4 +29,4 @@ mainImgContainer.style.gridTemplateColumns="100%";
 mainImgContainer.style.justifyItems="center";
 mainImg.style.width="10em";
 mainImg.style.marginTop="-7em";
-mainImgContainer.prepend()
+mainImgContainer.prepend();
