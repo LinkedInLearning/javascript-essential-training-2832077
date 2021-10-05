@@ -6,3 +6,17 @@
  * - Create several objects using the class.
  * - Test the objecs by calling their properties and using their methods in the console.
  */
+import Backpack from './Backpack.js'
+
+const everydayPack = new Backpack(
+  'Everyday Backpack',
+  30,
+  'grey',
+  15,
+  26,
+  26,
+  false
+)
+
+console.log('The everydayPack object:', everydayPack)
+console.log('The color value:', everydayPack.color)
