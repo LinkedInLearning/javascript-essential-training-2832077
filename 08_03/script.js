@@ -10,6 +10,7 @@ const greenPack = {
   pocketNum: 3,
 };
 
+
 const addPack = function (currentPack) {
   const newArticle = document.createElement("article");
   newArticle.innerHTML = `
