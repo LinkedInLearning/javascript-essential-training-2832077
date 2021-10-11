@@ -9,12 +9,17 @@
 //Tip 
 //Total
 
+const formatter = (number) => {
+
+  return new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(number);
+}
+
+
 const tipCalculator = (currency, preTipSum, tipPercent ) => {
 
 
-  let tip = preTipSum*(tipPercent/100)
-  let total = preTipSum+tip
-
+  let tip = (preTipSum*(tipPercent/100).toFixed(2));
+  let total = (preTipSum+tip).toFixed(2);
   const tipObject = document.createElement("article");
 
 
@@ -35,7 +40,7 @@ const tipCalculator = (currency, preTipSum, tipPercent ) => {
 
 let main = document.querySelector("main");
 
-main.append(tipCalculator("$", 20, 15))
+main.append(tipCalculator("$", 507, 21));
 
 
 
