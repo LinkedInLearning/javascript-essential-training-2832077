@@ -8,19 +8,19 @@
  * - A tip: Use either display flex or display grid to create the horizontal menu.
  */
 
-import Backpack from "./Backpack.js";
+import Backpack from './Backpack.js'
 
 const everydayPack = new Backpack(
-  "Everyday Backpack",
+  'Everyday Backpack',
   30,
-  "grey",
+  'grey',
   15,
   26,
   26,
   false,
-  "December 5, 2018 15:00:00 PST",
-  "../assets/images/everyday.svg"
-);
+  'December 5, 2018 15:00:00 PST',
+  '../assets/images/everyday.svg'
+)
 
 const content = `
   
@@ -50,13 +50,32 @@ const content = `
       }</span></li>
     </ul>
   
-`;
+`
 
-const main = document.querySelector(".maincontent");
+const main = document.querySelector('.maincontent')
 
-const newArticle = document.createElement("article");
-newArticle.classList.add("backpack");
-newArticle.setAttribute("id", "everyday");
-newArticle.innerHTML = content;
+const newArticle = document.createElement('article')
+newArticle.classList.add('backpack')
+newArticle.setAttribute('id', 'everyday')
+newArticle.innerHTML = content
 
-main.append(newArticle);
+main.append(newArticle)
+
+/**
+ * Add a navigation section to the DOM
+ */
+const navContent = `
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Backpacks</a></li>
+      <li><a href="#">Other things</a></li>
+      <li><a href="#">Contact</a></li>
+`
+
+const mainNav = document.createElement('nav')
+mainNav.classList.add('main-navigation')
+const navList = document.createElement('ul')
+navList.innerHTML = navContent
+mainNav.append(navList)
+
+document.querySelector('.siteheader').append(mainNav)
