@@ -83,3 +83,27 @@ const usedStatus = () => {
 };
 
 usedStatus()
+
+
+
+let backPackAge = 30;
+let description;
+
+switch(true){
+  case  backPackAge < 30:
+    description = "This backpack is new"
+    break
+  case backPackAge >= 30 && backPackAge <= 60:
+    description = "This backpack is lightly used"
+    break
+  case backPackAge > 60 && backPackAge<= 90:
+    description = "This backpack is used"
+    break
+  case backPackAge>90:
+    description = "This backpack is well used"
+    break
+  default: 
+    description = "We have no information on this item's age but it still works great"
+}
+
+console.log(description);
