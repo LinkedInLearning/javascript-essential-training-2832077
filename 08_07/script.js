@@ -3,9 +3,7 @@
  * @link https://developer.mozilla.org/en-US/docs/Glossary/Function
  */
 
-const tipCalculator = () => {
-  let sum = 29.95;
-  let percentage = 18;
+const tipCalculator = (sum,percentage) => {
   let tip = sum * (percentage / 100);
   let total = sum + tip;
   console.log(`
@@ -16,4 +14,4 @@ const tipCalculator = () => {
 `);
 };
 
-tipCalculator();
+tipCalculator(20,20);
