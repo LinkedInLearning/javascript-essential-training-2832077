@@ -21,4 +21,23 @@ const backpack = {
   },
 };
 
+const Home = {
+  name: "mountbelRd",
+  no: 24,
+  type: "Address - Duplex",
+  people: {
+    p1: {
+      name: "zaid",
+      age: 21
+    },
+    p2: {
+      name: "uzy",
+      age: 22
+    }, 
+  },
+  isOwner: false
+}
 console.log("The backpack object:", backpack);
+console.log("The Home object:", Home);
+console.log("People:", Home.people);
+console.log("Age of p1", Home.people.p1.age, "Name of p2", Home.people.p2.name);
