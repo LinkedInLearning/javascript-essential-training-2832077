@@ -29,6 +29,10 @@
       this.Color = newColor;
       updateCar(newColor);
     },
+    updateModel: function (newModel) {
+        this.Model = newModel;
+        updateCar(newModel);
+      },
   };
 
   const markup = (car) => {
