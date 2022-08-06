@@ -38,6 +38,10 @@ const backpack = {
     this.volume = newVolume;
     updateBackpack(newVolume);
   },
+  updatepocketNum: function (numPockets) {
+    this.pocketNum = numPockets;
+    updateBackpack(numPockets);
+  },
 };
 
 const markup = (backpack) => {
