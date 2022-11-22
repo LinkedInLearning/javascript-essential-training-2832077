@@ -19,8 +19,17 @@ const backpack = {
   toggleLid: function (lidStatus) {
     this.lidOpen = lidStatus;
   },
+  changeColor: function (newColor) {
+    this.color = newColor;
+  },
   newStrapLength: function (lengthLeft, lengthRight) {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   },
 };
+
+console.log(backpack.color);
+
+backpack.changeColor("white");
+
+console.log(backpack.color);
