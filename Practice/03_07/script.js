@@ -7,6 +7,11 @@
  * - Find an object that has another object inside of it to create a nested object.
  * - Test your objects in the browser console by accessing the entire object and its specific properties.
  */
+// const updateRiceCooker = (update) => {
+//   let main = document.querySelector("main");
+//   main.innerHTML = markup(riceCooker);
+//   console.log(update);
+// };
 
 const riceCooker = {
   name: "Advance Rice Cooker",
@@ -21,4 +26,13 @@ const riceCooker = {
   isLidOpen: false,
   isCooking: false,
   isConnected: false,
+
+  toggleLid: function (lidStatus) {
+    this.isLidOpen = lidStatus;
+    updateRiceCooker(`Lid status changed`);
+  },
 };
+
+// const main = document.createElement("main");
+// main.innerHTML = markup(riceCooker);
+// document.body.appendChild(main);
