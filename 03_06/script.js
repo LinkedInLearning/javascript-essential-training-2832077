@@ -22,3 +22,4 @@ const backpack = {
 };
 
 console.log("The backpack object:", backpack);
+console.log("the pocketNum value:", backpack.pocketNum);
