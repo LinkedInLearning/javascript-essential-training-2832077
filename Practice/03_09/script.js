@@ -23,4 +23,13 @@ const backpack = {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   },
+  backPackColor: function (newColor) {
+    this.color = newColor;
+  }
 };
+
+console.log("Backpack color:", backpack.color);
+
+backpack.backPackColor("red");
+console.log("New backpack color:", backpack.color);
+
