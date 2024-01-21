@@ -18,3 +18,5 @@ const everydayPack = new Backpack(
 
 console.log("The everydayPack object:", everydayPack);
 console.log("Date acquired:", everydayPack.dateAcquired);
+
+

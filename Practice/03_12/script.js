@@ -6,3 +6,5 @@
  * - Create several objects using the class.
  * - Test the objects by calling their properties and using their methods in the console.
  */
+
+
