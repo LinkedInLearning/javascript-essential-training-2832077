@@ -6,3 +6,13 @@
  * - Create several objects using the class.
  * - Test the objecs by calling their properties and using their methods in the console.
  */
+
+import Bed from "./Bed";
+
+console.log(Bed);
+
+const myBed = new Bed("190x150", 5, 2, false);
+console.log(myBed);
+myBed.changeSheets();
+myBed.makeBed(true);
+console.log("my bed after changes: " + JSON.stringify(myBed));

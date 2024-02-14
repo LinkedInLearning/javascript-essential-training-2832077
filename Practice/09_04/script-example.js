@@ -45,7 +45,10 @@ gridCells.forEach((cell) => {
     if (cell.style.backgroundColor) {
       cell.style.backgroundColor = "";
     } else {
-      cell.style.backgroundColor = `#${randColor()}`;
+      const bg = randColor();
+      cell.style.backgroundColor = `#${bg}`;
+      document.body.style.backgroundColor = `#${bg}`;
+      cell.innerHTML = `<b>#${bg}</b>`;
     }
   });
 });
