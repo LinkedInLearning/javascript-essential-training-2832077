@@ -1,0 +1,80 @@
+<script src="08.js" defer></script>
+<div class="css-1gx99p8 eua3guj4">
+  <div class="css-13rgiwp e2s64ho0">
+    <h3><strong>Create HTML from an array of objects.</strong></h3>
+    <div>
+      <span></span>You are given a constant
+      <code>backpackObjectArray</code> containing an array of two objects and
+      the function <code>createBackpackMarkup()</code> which returns the
+      constant <code>content</code> containing a template literal with HTML
+      output.
+    </div>
+    <div>&nbsp;</div>
+    <div><strong>Your task</strong>:&nbsp;</div>
+    <div>
+      <ul>
+        <li>
+          Iterate through each item in the <code>backpackObjectArray</code>.
+        </li>
+        <li>
+          Create a new&nbsp;<code>&lt;article&gt;</code> with the id matching
+          the id field in the backpack object.
+        </li>
+        <li>
+          <span style="font-weight: 400"
+            >Use the <code>backpackAge()</code> function to calculate the
+            backpack age</span
+          >&nbsp;and add it in place of the purchase date
+          (<code>dateAcquired</code>).
+        </li>
+        <li>
+          Populate and return <code>content</code> with a HTML structure
+          matching the example below:
+        </li>
+      </ul>
+    </div>
+    <pre
+      class="language-html"
+      tabindex="0"
+    ><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pack01<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Everyday Backpack<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Volume:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span> 30l<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Color:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span> grey<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Age:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span> 1594 days old<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Number of pockets:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span> 15<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">&gt;</span></span>
+    </code></pre>
+    <h3><strong>Parameters</strong></h3>
+    <p>
+      <code><strong>document</strong></code
+      >: The `document` property of the project DOM.&nbsp;
+    </p>
+    <h3>Result</h3>
+    <p>
+      Serialized HTML fragment describing two &lt;article&gt; elements populated
+      with the data from <code>backpackObjectArray</code>.
+    </p>
+    <h3><strong>Constraints</strong></h3>
+    <ul>
+      <li>
+        The returned&nbsp;<code>content</code> HTML structure must match the
+        stated example.
+      </li>
+    </ul>
+    <div>
+      <h3>Want a hint?</h3>
+    </div>
+    <div>
+      Learn about creating new DOM elements in
+      <a
+        rel="noopener"
+        href="https://www.linkedin.com/learning/javascript-essential-training/"
+        >this course</a
+      >
+      on LinkedIn Learning.
+    </div>
+    <div>&nbsp;</div>
+  </div>
+</div>

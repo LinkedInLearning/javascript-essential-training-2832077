@@ -1,7 +1,8 @@
 # JavaScript Essential Training
+
 This is the repository for the LinkedIn Learning course JavaScript Essential Training. The full course is available from [LinkedIn Learning][lil-course-url].
 
-![JavaScript Essential Training][lil-thumbnail-url] 
+![JavaScript Essential Training][lil-thumbnail-url]
 JavaScript is a scripting language of the web. As the web evolves from a static to a dynamic environment, technology focus is shifting from static markup and styling—frequently handled by content management systems or automated scripts—to dynamic interfaces and advanced interaction. Once seen as optional, JavaScript is now becoming an integral part of the web, infusing every layer with its script.
 
 Through practical examples and mini-projects, this course helps you build your understanding of JavaScript piece by piece, from core principles like variables, data types, conditionals, and functions through advanced topics including loops, and DOM scripting. Along the way, instructor Morten Rand-Hendriksen provides challenges that allow you to put your new skills to the test.
@@ -23,6 +24,8 @@ Some movies will have a beginning and an end state. In the exercise files, the e
    - [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 2. From the root folder, open the terminal and enter the command `nmp install` to install dependencies.
 
+   Alternative command to install dependencies `nmp i`
+
 ### Instructor
 
 **Morten Rand-Hendriksen**
@@ -33,3 +36,14 @@ Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learn
 
 [lil-course-url]: https://www.linkedin.com/learning/javascript-essential-training
 [lil-thumbnail-url]: https://cdn.lynda.com/course/2832077/2832077-1610728160487-16x9.jpg
+
+### Student
+
+**José Miguel Bonilla Silió**
+
+_Web Designer and Developer_
+
+Check out my:
+
+- LinkedIn profile on [LinkedIn Profile](https://www.linkedin.com/in/expertoseoysem/).
+- Personal website on [Programador web Malaga](https//www.jmbs.es)
