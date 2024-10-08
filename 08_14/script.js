@@ -54,7 +54,7 @@ for (let i = 0; i < stuff.length; i++) {
 
 /**
  * for...of loop and arrays
- * @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
+ * @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in
  */
 // for (const item of stuff) {
 //   let listItem = document.createElement("li");
@@ -74,7 +74,7 @@ for (let i = 0; i < stuff.length; i++) {
 
 /**
  * for...in loop and objects
- * @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
+ * @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in
  */
 // for (const singleObject in nestedObjects) {
 //   let listItem = document.createElement("li");
