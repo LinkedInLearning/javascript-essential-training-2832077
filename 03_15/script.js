@@ -21,7 +21,7 @@ const everydayPack = new Backpack(
 
 console.log("The everydayPack object:", everydayPack);
 console.log("The pocketNum value:", everydayPack.pocketNum);
-console.log("Days since aquired:", everydayPack.backpackAge());
+console.log("Days since acquired:", everydayPack.backpackAge());
 
 // Book param order: title, author, ISBN, pubYear, pageNumber, currentPage, readStatus
 const surveillanceCapitalism = new Book(
