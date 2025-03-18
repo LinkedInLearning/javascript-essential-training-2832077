@@ -23,4 +23,23 @@ const backpack = {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   },
+
+  newBackpack: function (nameChange) {
+    this.name = nameChange;
+  },
+
+  newColor: function (colorChange) {
+    this.color = colorChange;
+  },
 };
+
+console.log("The backpack object:", backpack);
+
+console.log("Today I will take the", backpack.name);
+
+backpack.newBackpack("Adventure Backpack");
+
+console.log("I'm going on a hike and will take", backpack.name);
+
+backpack.newColor("blue");
+console.log("and the color will be", backpack.color);

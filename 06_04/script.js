@@ -3,7 +3,7 @@
  * @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let
  */
 
-var color = "purple";
+let color = "purple";
 
 document.querySelector(".left").style.backgroundColor = color;
 document.querySelector(".left .color-value").innerHTML = color;
@@ -11,8 +11,9 @@ document.querySelector(".left .color-value").innerHTML = color;
 color = "skyblue";
 
 function headingColor() {
-  color = "blue";
+  let titleColor = "blue";
   document.querySelector(".title").style.color = color;
+  console.log("inside:", titleColor);
 }
 
 headingColor();

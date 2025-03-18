@@ -16,7 +16,7 @@ console.log("Floating point number:", floatDemo);
 
 // Boolean:
 let booleanDemo = true;
-console.log("Boolean value:", booleanDemo);
+console.log("Boolean value:", typeof booleanDemo);
 
 // Null value (nothing):
 let nullDemo = null;
