@@ -9,7 +9,13 @@
 
 const backpack = {
   name: "Everyday Backpack",
+  realName: function (echteNaam) {
+    this.name = echteNaam;
+  },
   volume: 30,
+  realVolume: function (echteVolume) {
+    this.volume = echteVolume;
+  },
   color: "grey",
   pocketNum: 15,
   strapLength: {
@@ -24,3 +30,15 @@ const backpack = {
     this.strapLength.right = lengthRight;
   },
 };
+
+console.log("Naam functie:");
+console.log(backpack.name);
+backpack.realName("Adam");
+console.log(backpack.name);
+
+console.log("");
+
+console.log("Volume functie:");
+console.log(backpack.volume);
+backpack.realVolume(100);
+console.log(backpack.volume);
