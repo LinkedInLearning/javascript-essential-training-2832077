@@ -5,7 +5,7 @@
  * Class expression:  const Name = class {}
  */
 
-class Backpack {
+export class Backpack {
   constructor(
     // Defines parameters:
     name,
@@ -37,4 +37,34 @@ class Backpack {
   }
 }
 
-export default Backpack;
+export class Kast {
+  constructor(
+    //Parameters
+    lengthe,
+    breedte,
+    kleur,
+    aspact,
+    blueberry,
+    model,
+    kastOpen
+  ) {
+    // Properties
+    this.lengthe = lengthe;
+    this.breedte = breedte;
+    this.kleur = kleur;
+    this.kledingStukken = {
+      kledingAspact: aspact,
+      kledingBlue: blueberry,
+    };
+    this.model = model;
+    this.kastOpen = kastOpen;
+  }
+  // Functies toevoegen
+  toggelKast(kastStatus) {
+    this.kastOpen = kastStatus;
+  }
+  newKledingAantal(aspact, blueberry) {
+    this.kledingStukken.kledingAspact = aspact;
+    this.kledingStukken.kledingBlue = blueberry;
+  }
+}
