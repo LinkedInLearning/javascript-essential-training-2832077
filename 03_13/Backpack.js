@@ -32,6 +32,8 @@ class Backpack {
     let acquired = new Date(this.dateAcquired);
     let elapsed = now - acquired; // elapsed time in milliseconds
     let daysSinceAcquired = Math.floor(elapsed / (1000 * 3600 * 24));
+    // Math floor zorgt ervoor dat de datum in milliseconds wordt gezet zonder decimalen.
+    // Dan deel je de nummer (elapsed) door de seconden/uren/uren in een dag en dan heb je de daggen
     return daysSinceAcquired;
   }
 }
