@@ -6,6 +6,8 @@
 
 import Backpack from "./Backpack.js";
 
+const image2 = "../assets/images/frog.svg";
+
 const everydayPack = new Backpack(
   "Everyday Backpack",
   30,
