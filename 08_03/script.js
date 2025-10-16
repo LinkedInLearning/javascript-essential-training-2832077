@@ -10,18 +10,18 @@ const greenPack = {
   pocketNum: 3,
 };
 
-const addPack = function (currentPack) {
-  const newArticle = document.createElement("article");
-  newArticle.innerHTML = `
-    <h1>${currentPack.name}</h1>
+const addBackPack = function (backPack) {
+  const article = document.createElement("article");
+  article.innerHTML = `
+    <h1>${backPack.name}</h1>
     <ul>
-      <li>Volume: ${currentPack.volume}</li>
-      <li>Color: ${currentPack.color}</li>
-      <li>Number of pockets: ${currentPack.pocketNum}</li>
+      <li>Volume: ${backPack.volume}</li>
+      <li>Color: ${backPack.color}</li>
+      <li>Number of pockets: ${backPack.pocketNum}</li>
     </ul>
   `;
-  return newArticle;
+  return article;
 };
 
 const main = document.querySelector("main");
-main.append(addPack(greenPack));
+main.appendChild(addBackPack(greenPack));
