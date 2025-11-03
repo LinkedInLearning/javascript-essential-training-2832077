@@ -57,3 +57,24 @@ const content = `
       }</span></li>
     </ul>  
 `;
+
+const addFigure = (dataObj) => {
+  let figure = document.createElement("figure");
+  let image = document.createElement("img");
+  image.setAttribute("src", dataObj.image);
+  image.setAttribute("alt", "");
+
+  let imgDesc = document.createElement("figcaption");
+  imgDesc.innerHTML += dataObj.description;
+  figure.append(image, imgDesc);
+  return figure;
+};
+
+const createArticle = (backpack) => {
+  let article = document.createElement("article");
+  article.innerHTML += content;
+  article.prepend(addFigure(backpack));
+  return article;
+};
+
+document.querySelector("main").append(createArticle(frogpack));
