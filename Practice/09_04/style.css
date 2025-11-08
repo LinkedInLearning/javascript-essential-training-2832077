@@ -6,6 +6,14 @@ body {
   height: 100vh;
 }
 
+body.black {
+  background-color: black;
+}
+
+body.white {
+  background-color: white;
+}
+
 .grid {
   margin: 0;
   padding: 1rem;
@@ -16,9 +24,17 @@ body {
   border-radius: 0.5rem;
 }
 
+.grid.inside {
+  border: solid red 5px;
+}
+
 .cell {
   display: block;
   width: 6rem;
   height: 6rem;
   background-color: hsl(0, 0%, 90%);
+}
+
+.cell.hover {
+  background-color: aqua;
 }
