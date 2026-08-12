@@ -24,3 +24,20 @@ const backpack = {
     this.strapLength.right = lengthRight;
   },
 };
+
+// Using my object from example 03_07 file:
+const gamingPc = {
+  processor: "Amd",
+  grapicsCard: "Nvidia",
+  ram: "32gb",
+  motherBoard: "asus",
+  fans: "8",
+  powerSupplay: "1200w",
+  method: function (ram) {
+    this.ram = ram;
+  },
+};
+
+gamingPc.method("64bg");
+
+console.log(gamingPc.ram);
