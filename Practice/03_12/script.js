@@ -6,3 +6,15 @@
  * - Create several objects using the class.
  * - Test the objecs by calling their properties and using their methods in the console.
  */
+
+import Backpack from "../../03_12/Backpack";
+
+const everydayPack = Backpack(
+    "Mikey",
+    24,
+    "black",
+    12,
+    15,
+    15,
+    "true"
+);

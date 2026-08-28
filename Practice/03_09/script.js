@@ -9,7 +9,7 @@
 
 const backpack = {
   name: "Everyday Backpack",
-  volume: 30,
+  volume: high,
   color: "grey",
   pocketNum: 15,
   strapLength: {
@@ -23,4 +23,15 @@ const backpack = {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   },
+  newVolume: function( kyte) {
+    this.volume.high = kyte;
+  },
+  newPocketNum: function (pocket) {
+    this.pocketNum = pocket;
+  },
+
 };
+
+backpack.newVolume(40)
+
+console.log( backpack.newVolume);
