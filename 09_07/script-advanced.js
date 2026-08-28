@@ -12,6 +12,45 @@
 import backpackObjectArray from "./components/data.js";
 
 /**
+ * Function to create a strap length form and add event listeners.
+ */
+const createStrapLengthForm = (element, side) => {
+  const form = document.createElement("form");
+  const input = document.createElement("input");
+  input.setAttribute("type", "number");
+  input.setAttribute("name", `${side}-strap-length`);
+  input.setAttribute("placeholder", `Enter ${side} strap length`);
+
+  const submitButton = document.createElement("button");
+  submitButton.setAttribute("type", "submit");
+  submitButton.innerText = "Update";
+
+  form.appendChild(input);
+  form.appendChild(submitButton);
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const newLength = input.value;
+
+    // Find the current backpack object in backpackObjectArray
+    let backpackObject = backpackObjectArray.find(
+      ({ id }) => id === element.closest("article").id
+    );
+
+    // Update the strap length in the backpack object
+    backpackObject.strapLength[side] = newLength;
+
+    // Update the display text
+    element.querySelector("span").innerText = `${newLength} inches`;
+
+    // Clear the input
+    input.value = "";
+  });
+
+  element.appendChild(form);
+};
+
+/**
  * Add event listener to the lid-toggle button.
  */
 const lidToggle = function (event, button, newArg) {
@@ -80,6 +119,13 @@ const backpackList = backpackObjectArray.map((backpack) => {
   // Add event listener
   button.addEventListener("click", (event) => {
     lidToggle(event, button, newArg);
+  });
+
+  // Find strap elements and add form
+  const strapElements = backpackArticle.querySelectorAll(".backpack__strap");
+  strapElements.forEach((strapElement) => {
+    const side = strapElement.getAttribute("data-side");
+    createStrapLengthForm(strapElement, side);
   });
 
   return backpackArticle;
