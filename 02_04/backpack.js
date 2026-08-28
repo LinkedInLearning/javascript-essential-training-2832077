@@ -1,5 +1,6 @@
 const updateBackpack = (update) => {
   let main = document.querySelector("main");
+  // eslint-disable-next-line no-undef
   main.innerHTML = markup(backpack);
   console.info(update);
 };

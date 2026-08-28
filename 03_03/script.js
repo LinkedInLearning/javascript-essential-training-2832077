@@ -2,6 +2,7 @@
  * Create a Backpack object.
  */
 
+// eslint-disable-next-line no-unused-vars
 const backpack = {
   name: "Everyday Backpack",
   volume: 30,
