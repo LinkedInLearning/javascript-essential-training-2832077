@@ -3,9 +3,9 @@
  */
 
 const backpack = {
-  name: "Everyday Backpack",
+  name: 'Everyday Backpack',
   volume: 30,
-  color: "grey",
+  color: 'grey',
   pocketNum: 15,
   strapLength: {
     left: 26,
@@ -13,12 +13,18 @@ const backpack = {
   },
   lidOpen: false,
   toggleLid: function (lidStatus) {
-    this.lidOpen = lidStatus;
+    this.lidOpen = lidStatus
   },
   newStrapLength: function (lengthLeft, lengthRight) {
-    this.strapLength.left = lengthLeft;
-    this.strapLength.right = lengthRight;
+    this.strapLength.left = lengthLeft
+    this.strapLength.right = lengthRight
   },
-};
+}
+// Added the console
+console.log('The backpack object:', backpack);
+console.log('The pocketNum value:', backpack.pocketNum);
+console.log('The Strap length L:', backpack.strapLength.left);
 
-console.log("The backpack object:", backpack);
+var query = 'pocketNum'
+
+console.log('The pocketNum value:', backpack[query]);
