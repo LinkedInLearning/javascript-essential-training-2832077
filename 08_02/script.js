@@ -4,7 +4,7 @@
  */
 
 // Function declaration:
-function doSomeMath(a, b) {
+function doSomeMad(a, b) {
   let c = a + b;
   return c;
 }
